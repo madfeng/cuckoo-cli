@@ -1,0 +1,31 @@
+{
+  "name": "cuckoo-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "react"
+  ],
+  "bin": {
+    "cuckoo": "./bin/cuckoo.js"
+  },
+  "scripts": {
+    "test": "cuckoo new test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "ora": "^3.2.0",
+    "semver": "^5.6.0",
+    "yargs-parser": "^13.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
+  }
+}

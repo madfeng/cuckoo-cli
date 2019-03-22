@@ -13,11 +13,12 @@ const project = args._[1];
 const run = require('../lib/run.js');
 
 program
-  .version(package.version)
-  .usage('<command>');
+    .version(package.version)
+    .usage('<command>');
 
-program.command('new (template)')
-  .description("create a project");
+program
+    .command('new (template)')
+    .description("create a project");
 
 program.parse(process.argv);
 
@@ -27,10 +28,10 @@ if (!semver.satisfies(process.version, '>= 7.0.0')) {
 }
 
 switch(script) {
-  case 'new' :
-    run(project);
-    break;
-  default :
-    program.help();
-    break;
+    case 'new' :
+        run({name : project});
+        break;
+    default :
+        program.help();
+        break;
 }

@@ -30,3 +30,8 @@ github: https://github.com/chalk/chalk
 
 ### node-mkdirp
 github: https://github.com/substack/node-mkdirp
+
+### execa
+可以调用shell和本地外部程序的javascript封装
+
+github: https://github.com/sindresorhus/execa

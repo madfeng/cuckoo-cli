@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "hw-lm",
-  "version": "1.2.0",
+  "name": "<%= name%>",
+  "version": "1.0.0",
   "scripts": {
     "start": "cross-env BROWSER=none ESLINT=none roadhog dev",
     "build": "cross-env ESLINT=none roadhog build",
@@ -16,13 +16,21 @@
     "classnames": "^2.2.6",
     "dva": "^2.1.0",
     "dva-loading": "^2.0.5",
+    <%_ if(plugins.indexOf('echarts-for-react') > -1) { _%>
     "echarts-for-react": "^2.0.15-beta.0",
+    <%_ } _%>
     "immutable": "^3.8.2",
     "lodash": "^4.17.10",
     "moment": "2.20.1",
     "rc-layout": "latest",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
+    <%_ if(plugins.indexOf('react-slick') > -1) { _%>
+    "react-slick": "^0.24.0",
+    <%_ } _%>
+    <%_ if(plugins.indexOf('react-virtualized') > -1) { _%>
+    "react-virtualized": "^9.21.1",
+    <%_ } _%>
     "updeep": "^1.0.0",
     "vtx-ui": "latest"
   },
@@ -33,7 +41,9 @@
     "babel-plugin-transform-runtime": "^6.9.0",
     "cross-env": "^5.1.3",
     "css-split-webpack-plugin": "^0.2.5",
+    <%_ if(plugins.indexOf('echarts-for-react') > -1) { _%>
     "echarts": "3.8.5",
+    <%_ } _%>
     "eslint": "^4.14.0",
     "eslint-config-umi": "^0.1.1",
     "eslint-plugin-flowtype": "^2.34.1",

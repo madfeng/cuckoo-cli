@@ -1,0 +1,29 @@
+.page {
+    padding: 16px;
+}
+.markdown h1, .markdown h2 {
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: .3em;
+}
+
+.markdown pre {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 13px;
+    word-wrap: normal;
+    word-break: break-word!important;
+    word-break: break-all;
+    white-space: pre;
+    overflow: auto;
+    border-radius: 4px;
+    display: block;
+    overflow-x: auto;
+    padding: .5em;
+    color: #abb2bf;
+    background: #282c34;
+}
+
+.markdown img {
+    max-height: 200px;
+    margin-right: 16px;
+}
